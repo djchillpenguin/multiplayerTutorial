@@ -41,6 +41,6 @@ io.on('connection', function (socket) {
     });
 });
 
-server.listen(8080, function () {
+server.listen(porcess.env.PORT || 5000, function () {
     console.log(`Listening on ${server.address().port}`);
 });
